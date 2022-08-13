@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import { SCREENS } from "../../components/responsive";
 import Porche from "../../../assets/images/mclaren-orange-big.png";
 import Blob from "../../../assets/images/blob.svg";
+import { Button } from "../../components/button";
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -156,6 +157,10 @@ const Topsection = () => {
           Choose the best Car from our store that matches your personality, we
           new best deals every day
         </Description>
+        <ButtonsContainer>
+          <Button text="Book now" />
+          <Button theme="filled" text="Sell your car" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>

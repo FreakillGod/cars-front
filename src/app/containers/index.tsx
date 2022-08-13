@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import BookCard from "../components/bookCard";
+import { Marginer } from "../components/marginer";
 import NavContainer from "../components/navbar";
+import BoookingSteps from "./HomePage/BoookingSteps";
 import Topsection from "./HomePage/Topsection";
 
 const PageContainer = styled.div`
@@ -20,6 +23,10 @@ export function HomePage() {
     <PageContainer>
       <NavContainer />
       <Topsection/>
+      <Marginer direction="vertical" margin="4em" />
+      <BookCard/>
+      <Marginer direction="vertical" margin="4em" />
+      <BoookingSteps/>
     </PageContainer>
   );
 }
