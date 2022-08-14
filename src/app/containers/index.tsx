@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import BookCard from "../components/bookCard";
 import { Marginer } from "../components/marginer";
 import NavContainer from "../components/navbar";
+import AboutUs from "./HomePage/AboutUs";
 import BoookingSteps from "./HomePage/BoookingSteps";
 import Topsection from "./HomePage/Topsection";
 
@@ -25,8 +26,10 @@ export function HomePage() {
       <Topsection/>
       <Marginer direction="vertical" margin="4em" />
       <BookCard/>
-      <Marginer direction="vertical" margin="4em" />
+      <Marginer direction="vertical" margin="8em" />
       <BoookingSteps/>
+      <Marginer direction="vertical" margin="5em" />
+      <AboutUs/>
     </PageContainer>
   );
 }
