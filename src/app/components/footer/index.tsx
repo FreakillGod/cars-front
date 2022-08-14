@@ -44,12 +44,17 @@ const BottomContainer = styled.div`
 const CopyrightText = styled.small`
   font-size: 12px;
   ${tw`
+    w-full
+    text-right
+    md:mr-10
+    md:mb-2
     text-gray-300
   `}
 `;
 
 const AboutContainer = styled.div`
   ${tw`
+    md:text-center
     flex
     flex-col
     mr-2
@@ -61,6 +66,11 @@ const AboutContainer = styled.div`
   `};
 `;
 
+const Logowrapper = styled.div`
+  ${tw`
+        md:self-center
+    `}
+`;
 const AboutText = styled.p`
   ${tw`
     text-white
@@ -156,7 +166,9 @@ const Footer = () => {
     <FooterContainer>
       <InnerContainer>
         <AboutContainer>
-          <Logo color="white" bgColor="dark" />
+          <Logowrapper>
+            <Logo color="white" bgColor="dark" />
+          </Logowrapper>
           <AboutText>
             Cars 56 is a CAR Renting and Selling company across the World
           </AboutText>
@@ -214,6 +226,11 @@ const Footer = () => {
           </HorizontalContainer>
         </SectionContainer>
       </InnerContainer>
+      <BottomContainer>
+        <CopyrightText>
+          Copyright {new Date().getFullYear()} Cars56, All Rights Reserved
+        </CopyrightText>
+      </BottomContainer>
     </FooterContainer>
   );
 };
